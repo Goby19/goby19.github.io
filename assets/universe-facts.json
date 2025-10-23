@@ -1,0 +1,54 @@
+{
+  "fun_facts": [
+    {
+      "id": 1,
+      "title": "Universul nu are un centru",
+      "fact": "Universul se extinde uniform în toate direcțiile, ceea ce înseamnă că nu există un punct central — fiecare galaxie se îndepărtează de celelalte."
+    },
+    {
+      "id": 2,
+      "title": "Există mai multe stele decât boabe de nisip",
+      "fact": "Astronomii estimează că există aproximativ 200 de miliarde de trilioane de stele în universul observabil — mult mai multe decât toate boabele de nisip de pe Pământ."
+    },
+    {
+      "id": 3,
+      "title": "Lumina din galaxiile îndepărtate este veche",
+      "fact": "Când privim o galaxie îndepărtată, o vedem așa cum era acum milioane sau chiar miliarde de ani, deoarece luminii îi ia atât de mult să ajungă până la noi."
+    },
+    {
+      "id": 4,
+      "title": "Găurile negre pot încetini timpul",
+      "fact": "Datorită gravitației lor uriașe, timpul trece mai lent în apropierea unei găuri negre decât în zonele îndepărtate — un fenomen prezis de teoria relativității a lui Einstein."
+    },
+    {
+      "id": 5,
+      "title": "Spațiul este complet tăcut",
+      "fact": "Sunetul are nevoie de un mediu, precum aerul sau apa, pentru a se propaga, iar cum spațiul este aproape un vid perfect, undele sonore nu se pot deplasa prin el."
+    },
+    {
+      "id": 6,
+      "title": "Stelele neutrone sunt extrem de dense",
+      "fact": "O linguriță de materie provenită dintr-o stea neutronică ar cântări aproximativ un miliard de tone pe Pământ — cam cât Muntele Everest."
+    },
+    {
+      "id": 7,
+      "title": "Galaxiile pot coliziona",
+      "fact": "Calea Lactee și galaxia Andromeda sunt pe cale să se ciocnească și se vor uni peste aproximativ 4,5 miliarde de ani, formând o nouă galaxie eliptică."
+    },
+    {
+      "id": 8,
+      "title": "Universul este în mare parte întunecat",
+      "fact": "Doar aproximativ 5% din univers este alcătuit din materie obișnuită; restul este compus din materie întunecată și energie întunecată, încă puțin înțelese."
+    },
+    {
+      "id": 9,
+      "title": "Timpul și spațiul sunt legate",
+      "fact": "Conform teoriei relativității generale, spațiul și timpul formează un singur țesut numit spațiu-timp, care se poate curba și întinde sub influența gravitației."
+    },
+    {
+      "id": 10,
+      "title": "Universul încă se extinde",
+      "fact": "Expansiunea universului nu doar continuă, ci se accelerează, fiind impulsionată de o forță misterioasă numită energie întunecată."
+    }
+  ]
+}

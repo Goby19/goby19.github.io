@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --bg-color: #040c24;
+  --primary-color: #0a205a;
+  --secondary-color: #3a4c7a;
+  --accent-color: #BEC7DF;
+  --text-color: #ffffff;
+  --orbit-size:
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 1vw;
+  z-index: 10;
+}
+
+.links a {
+  color: var(--text-color);
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.3vmax;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.logo{
+  margin: 0 1vw;
+}
+
+.links a:hover {
+  color: var(--accent-color);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+#home-sec-1 {
+  position: relative;
+  background: var(--bg-color);
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 100px 100px, 150px 150px, 200px 200px;
+  background-position: 0 0, 50px 50px, 100px 100px;
+}
+
+#home-sec-2 {
+  display: block;
+  padding: 7vh 3vw;
+  background: var(--primary-color);
+}
+
+/* Orbit animation styles */
+.orbit {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 40px auto;
+}
+
+.pamant {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 28vmax;
+  height: 28vmax;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: none;
+  filter: drop-shadow(0 0 40px rgba(0,180,255,0.35)) drop-shadow(0 0 80px rgba(0,180,255,0.12));
+}
+
+.luna {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5.5vmax !important;
+  height: 5.5vmax !important;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: translate(-50%, -60%) rotate(0deg) translate(19vw) rotate(0deg);
+  z-index: 1;
+  animation: orbit 24s linear infinite;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.4)) drop-shadow(0 0 50px rgba(255,255,255,0.12));
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -60%) rotate(0deg) translate(18vmax) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -60%) rotate(360deg) translate(18vmax) rotate(-360deg);
+  }
+}
+
+#explore-button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-family: 'Baloo 2', cursive;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#explore-button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transform: rotate(90deg);
+}
+
+.intro-title, .fun-fact-title {
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vh;
+  color: var(--text-color);
+  margin-bottom: 1vh;
+}
+
+.intro-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3vh;
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.fun-fact-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3vh;
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 800px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fun-fact-text.fade {
+  opacity: 0;
+}
+  .stirea_zilei {
+    display:flex;
+    justify-content:center;
+    font-family: 'Baloo 2', cursive;
+  font-size: 40px;
+  text-align:center;
+  
+  background-color: rgb(0, 92, 128);
+  padding: 30px 0;
+  }
+
+  .stirea_zilei h1 {
+  margin-inline:auto;
+  overflow-x:hidden;
+  white-space:nowrap;
+  border-right:0px solid;
+  animation:typing 1 steps(100) alternate;
+  animation-duration:2s;
+  }
+@keyframes typing {
+  from {width:0;}
+  to {width:49%;}
+}
+.stirea_zilei_content{
+  background-color: rgb(196, 86, 23);
+}
+@media (max-width: 768px) {
+  html, body {
+    scroll-snap-type: none; 
+  }
+  
+  .home-sec-3-content {
+    flex-direction: column;
+    align-items: justify-content center;
+  }
+
+  .card {
+    width: 100%;
+    height: 33%;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: none;
+  }
+  
+
+}
